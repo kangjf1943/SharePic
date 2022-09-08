@@ -17,4 +17,4 @@ tibble(name = html_attr(x= node.content, name = "title"),
   # 给链接加上必要的前后缀
   mutate(link = paste0("https://github.com", link, "?raw=true")) %>% 
   # 导出表格
-  openxlsx::write.xlsx("Proc_Second_hand_pics.xlsx")
+  openxlsx::write.xlsx("ProcData/Second_hand_pics.xlsx")
