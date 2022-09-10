@@ -4,7 +4,7 @@ library(dplyr)
 # 爬取存放图片的网页中各文件对应的名字和链接
 node.content <- 
   # 获取网页信息
-  read_html("https://github.com/kangjf1943/SharePic/tree/main/RawData") %>% 
+  read_html("https://github.com/kangjf1943/SharePic/tree/main/new") %>% 
   # 找到对应节点并且获取内容
   html_nodes("div.js-details-container span a.js-navigation-open")
 # 提取标题和链接
